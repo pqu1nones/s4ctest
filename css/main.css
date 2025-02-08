@@ -2560,6 +2560,13 @@ html.no-csstransitions .hero-content {
 
 }
 
+@media (max-width: 768px) {
+    .s-hero {
+        background-image: url('images/hero-bg-3000.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
 
 /* ===================================================================
  * # about

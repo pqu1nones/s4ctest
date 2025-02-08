@@ -443,15 +443,17 @@
     <script src="js/main.js"></script>
     <script>
         // Initialize Rellax
-        var rellax = new Rellax('.rellax', {
-            // Customize options if needed
-            speed: -2,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
+        if (window.innerWidth > 768) {
+            var rellax = new Rellax('.rellax', {
+                // Customize options if needed
+                speed: -2,
+                center: false,
+                wrapper: null,
+                round: true,
+                vertical: true,
+                horizontal: false
+            });
+        }
     </script>
 
 </body>
