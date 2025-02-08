@@ -21,6 +21,7 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -72,7 +73,7 @@
 
     <!-- hero
     ================================================== -->
-    <section class="s-hero" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section class="s-hero rellax" data-rellax-speed="-2" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="hero-left-bar"></div>
 
@@ -440,5 +441,18 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Initialize Rellax
+        var rellax = new Rellax('.rellax', {
+            // Customize options if needed
+            speed: -2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+    </script>
 
 </body>
+</html>
