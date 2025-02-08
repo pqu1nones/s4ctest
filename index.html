@@ -453,6 +453,13 @@
                 vertical: true,
                 horizontal: false
             });
+        } else {
+            // Fallback for mobile devices
+            document.querySelectorAll('.rellax').forEach(function(element) {
+                element.style.backgroundImage = 'url(images/hero-bg-3000.jpg)';
+                element.style.backgroundSize = 'cover';
+                element.style.backgroundPosition = 'center';
+            });
         }
     </script>
 
