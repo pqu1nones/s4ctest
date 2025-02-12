@@ -270,11 +270,11 @@
                 Thank you for serving with us as we honor God and make disciples. Please fill-up and send the form below.
                 </p>
 
-                <form name="volunteerForm" id="volunteerForm" class="volunteerForm"  action="https://formsubmit.co/d1dc43a376786a594b20d35e38da91ac" autocomplete="off" method="post">
+                <form name="volunteerForm" id="volunteerForm" class="volunteerForm"  action="https://formsubmit.co/d1dc43a376786a594b20d35e38da91ac" autocomplete="off" method="POST">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="Your Name" value="" type="text">
+                            <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="Your Name" value="" type="text" required>
                         </div>
 
                         <div class="form-field">
@@ -295,7 +295,7 @@
                         <br>
                         <div class="form-field">
                             <label for="cMinistry">Ministry to volunteer</label>
-                            <div class="ss-custom-select">
+                            <div class="ss-custom-select" required>
                                 <select class="h-full-width h-remove-bottom" name="cMinistry" id="cMinistry">
                                     <option value="Option 1">Ushering & Security</option>
                                     <option value="Option 2">Kids Church</option>
@@ -312,7 +312,7 @@
                         <div class="form-field">
                             <label for="cFirstTime">This is my first time to serve</label>
                             <div class="ss-custom-select">
-                                <select class="h-full-width h-remove-bottom" name="cFirstTime" id="cFirstTime">
+                                <select class="h-full-width h-remove-bottom" name="cFirstTime" id="cFirstTime" required>
                                     <option value="Option 1">Yes</option>
                                     <option value="Option 2">No</option>
                                 </select>
