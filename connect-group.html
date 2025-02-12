@@ -122,11 +122,14 @@
                 Kindly fill-up the form below to help us better understand your profile and help you connect to a connect group that suits you.
                 </p>
 
-                <form name="connectForm" id="connectForm" class="connectForm" method="post" action="" autocomplete="off">
+                <form name="connectForm" id="connectForm" class="connectForm" action="https://formsubmit.co/d1dc43a376786a594b20d35e38da91ac" autocomplete="off" method="POST">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="Your Name" value="" type="text">
+                            <input name="cEmail" id="cEmail" class="h-full-width h-remove-bottom" placeholder="Your Email" value="" type="text" required>
+                            <input type="hidden" name="_next" value="https://pqu1nones.github.io/s4ctest/thankyou.html">
+                            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+                            <input type="text" name="_honey" style="display:none">
                         </div>
 
                         <div class="form-field">
@@ -149,7 +152,7 @@
                             <input name="cAvailability" id="cAvailability" class="h-full-width h-remove-bottom" placeholder="Availability (Day & Time)" value="" type="text">
                         </div>
 
-                        <!-- <br>
+                        <br>
                         <div class="form-field">
                             <label for="cGender">Gender :</label>
                             <div class="ss-custom-select">
@@ -158,7 +161,7 @@
                                     <option value="Option 3">Female</option>
                                 </select>
                             </div>
-                        </div> -->
+                        </div>
 
                         <div class="comments form-field">
                             <textarea name="cComments" id="cComments" class="h-full-width h-remove-bottom" placeholder="Comments & Questions"></textarea>
