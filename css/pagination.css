@@ -6,16 +6,15 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Lora", serif;
 }
 th,td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 3.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
     outline-color: #dddddd7a;
     padding-left: 35px;
     padding-right: 35px;
-    text-align: left;
-
 }
 
 th{
@@ -24,15 +23,19 @@ th{
 }
 th:first-child{
     border-top-left-radius: 10px;
+    padding-left: 0;
 }
 th:last-child{
     border-top-right-radius: 10px;
+    padding-right: 0;
 }
 tr:nth-child(even) {
     background-color: #DBD4D3;
+    padding-left: 0;
 }
 tr:nth-child(odd) {
     background-color: whitesmoke;
+    padding-left: 0;
 }
 
 img{
