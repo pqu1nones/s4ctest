@@ -1840,8 +1840,10 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 108px;
-  height: 28px;
+  /*width: 108px;*/
+  with: 250px;
+  /*height: 28px;*/
+  height: 100px;
 }
 
 /* -------------------------------------------------------------------
@@ -3237,8 +3239,11 @@ html.no-csstransitions .hero-content {
 }
 
 .footer-logo img {
-  width: 138px;
-  height: 36px;
+  /*width: 138px;
+  height: 36px;*/
+  width: 130px;
+  height: auto;
+
 }
 
 /* -------------------------------------------------------------------
