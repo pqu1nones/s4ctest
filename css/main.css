@@ -1882,8 +1882,10 @@ input::-moz-focus-inner {
 /* added by copilot */
 .header-nav ul {
   list-style: none;
-  padding: 0;
+  margin-bottom: 5px;
+  padding: 5px 0;
   margin: 0;
+  color: #333;
 }
 
 .header-nav li {
@@ -1910,8 +1912,9 @@ input::-moz-focus-inner {
 
 .header-nav li ul li a {
   display: block;
-  padding: 10px 15px;
-  color: black; /* Changed to match main menu font color */
+  margin-bottom: 5px;
+  padding: 5px 0px;
+  color: #333; /* Changed to match main menu font color */
   text-decoration: none;
 }
 

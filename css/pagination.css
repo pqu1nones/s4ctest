@@ -38,11 +38,12 @@ tr:nth-child(odd) {
     padding-left: 0;
 }
 
-img{
+/*img{
     width:60px;
     height: 60px;
     border-radius: 50%;
 }
+*/
 
 #pagination {
     display: flex;
