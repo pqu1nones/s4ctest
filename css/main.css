@@ -1882,8 +1882,8 @@ input::-moz-focus-inner {
 /* added by copilot */
 .header-nav ul {
   list-style: none;
-  margin-bottom: 5px;
-  padding: 5px 0;
+  /*margin-bottom: 5px; */
+  padding: 0;
   margin: 0;
   color: #333;
 }
@@ -1900,22 +1900,36 @@ input::-moz-focus-inner {
   background: whitesmoke; /* Changed to transparent */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  /*width: 200px;
+  box-sizing: border-box;*/
 }
 
 .header-nav li:hover ul {
   display: block;
 }
 
+.header-nav li ul li ul {
+  top: 0;
+  left: 100%;
+}
+
+.header-nav li ul li:hover > ul {
+  display: block;
+  /*width: 200px;*/
+}
+
 .header-nav li ul li {
-  width: 200px;
+  width: 100%;
 }
 
 .header-nav li ul li a {
   display: block;
-  margin-bottom: 5px;
-  padding: 5px 0px;
+  padding: 10px 20px;
   color: #333; /* Changed to match main menu font color */
   text-decoration: none;
+  white-space: nowrap;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
 .header-nav li ul li a:hover {
