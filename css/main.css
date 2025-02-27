@@ -3485,6 +3485,11 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/header-bgs/volunteer-header-bg-2000.jpg);
 }
 
+.page-header--donations {
+  background-image: url(../images/header-bgs/donations-header-bg-2000.jpg);
+  padding-top: 30rem;
+}
+
 .page-header__content {
   position: relative;
 }
