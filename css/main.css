@@ -2954,6 +2954,9 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/icons/podcast/icon-podcast.svg);
 }
 
+.series-content__subscribe-links .ss-facebook a {
+  background-image: url(../images/icons/podcast/icon-facebook.svg);
+}
 .series-content__subscribe-links .ss-spotify a {
   background-image: url(../images/icons/podcast/icon-spotify.svg);
 }
