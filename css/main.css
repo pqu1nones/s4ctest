@@ -41,6 +41,7 @@
  *  # about
  *    ## about content
  *    ## schedule of services
+  *   ## about popup
  *  # connect
  *  # events
  *  # current series
@@ -2652,6 +2653,29 @@ html.no-csstransitions .hero-content {
 }
 
 /* ------------------------------------------------------------------- 
+ * ## popups
+ * ------------------------------------------------------------------- */
+ .popup {
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  height: 50px;
+  width: 200px;
+  transform: translate(-50%, 0);
+  background-color: rgb(228, 228, 175);
+  color: green;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.popup.show {
+  visibility: visible;
+}
+
+/* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
@@ -2964,12 +2988,88 @@ html.no-csstransitions .hero-content {
 .series-content__subscribe-links .ss-soundcloud a {
   background-image: url(../images/icons/podcast/icon-soundcloud.svg);
 }
-
 .series-content__subscribe-links .ss-youtube a {
   background-image: url(../images/icons/podcast/icon-youtube.svg);
 }
 .series-content__subscribe-links .ss-x a {
   background-image: url(../images/icons/podcast/icon-x.svg);
+}
+.series-content__subscribe-links .ss-instagram a {
+  background-image: url(../images/icons/social/icon-instagram.svg);
+}
+.series-content__subscribe-links .ss-tiktok a {
+  background-image: url(../images/icons/podcast/icon-tik-tok.svg);
+}
+.series-content__subscribe-links .ss-snapchat a {
+  background-image: url(../images/icons/podcast/snapchat-icon.svg);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## series subscribe CROWNED
+ * ------------------------------------------------------------------- */
+ .series-content__crowned {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.867;
+  padding: 0 4rem;
+  color: rgb(7, 7, 7);
+  text-align: center;
+}
+
+.series-content__crowned-links {
+  list-style: none;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.series-content__crowned-links li {
+  display: inline-block;
+  padding-left: 0;
+  line-height: 1;
+}
+
+.series-content__crowned-links a {
+  display: block;
+  height: 3.8rem;
+  width: 3.8rem;
+  margin: 0 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.series-content__crowned-links .ss-apple-podcast a {
+  background-image: url(../images/icons/podcast/icon-podcast.svg);
+}
+
+.series-content__crowned-links .ss-facebook a {
+  background-image: url(../images/icons/podcast/icon-facebook-5.svg);
+}
+.series-content__crowned-links .ss-spotify a {
+  background-image: url(../images/icons/podcast/icon-spotify.svg);
+}
+
+.series-content__crowned-links .ss-soundcloud a {
+  background-image: url(../images/icons/podcast/icon-soundcloud.svg);
+}
+.series-content__crowned-links .ss-youtube a {
+  background-image: url(../images/icons/podcast/icon-youtube-6.svg);
+}
+.series-content__crowned-links .ss-x a {
+  background-image: url(../images/icons/podcast/icon-x.svg);
+}
+.series-content__crowned-links .ss-instagram a {
+  background-image: url(../images/icons/podcast/icon-instagram-15.svg);
+}
+.series-content__crowned-links .ss-tiktok a {
+  background-image: url(../images/icons/podcast/tiktok.jpg);
+}
+.series-content__crowned-links .ss-snapchat a {
+  background-image: url(../images/icons/podcast/snapchat-icon.svg);
 }
 
 /* ------------------------------------------------------------------- 
@@ -3473,7 +3573,9 @@ html.no-csstransitions .hero-content {
 .page-header--contact {
   background-image: url(../images/header-bgs/contact-header-bg-2000.jpg);
 }
-
+.page-header--crowned {
+  background-image: url(../images/crowned-2000.jpg);
+}
 /*.page-header--events {
   background-image: url(../images/header-bgs/events-header-bg-2000.jpg);
 }*/
