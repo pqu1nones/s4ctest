@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>S4C</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About">About</a>
+                    <ul>
+                        <li><a href="rapture.html" title="Rapture">The Rapture</a></li>
+                        <li><a href="rmbc.html" title="RMBC">Rashon Messianic Bible College</a></li>
+                    </ul>
+                </li>
+                <li><a href="ministries.html" title="Ministies">Ministries</a>
+                    <ul>
+                        <li><a href="crowned.html" title="CROWNED">CROWNED</a></li>
+                        <li><a href="https://sanctifiedambassadors.com" target="_blank" title="Ministry 5">S.A.L.T.</a></li>
+                        <li><a href="#" title="Ministry 3">Ashes2Art</a></li>
+                        <li><a href="#" title="Ministry 4">Heart2Heart</a></li>
+                        <li><a href="#" title="Ministry 5">Iglesia de Dios Camino de Santidad</a></li>
+                        <li><a href="https://www.waimanalocountryfarms.com/" target="_blank"" title="Waimanalo Crountry Farms">Waim&amacr;nalo Country Farms</a></li>
+                    </ul>
+                </li>
+                <li><a href="volunteer.html" title="Volunteer">Volunteer</a></li>
+                <li><a href="events.html" title="Events">Events</a>
+                    <ul>
+                        <li><a href="prayermtg.html" title="Event 1">Prayer Meeting</a></li>
+                        <li><a allowfullscreen href="library/Februry2025.pdf" title="Event 2">Montly Calendar</a></li>
+                        <li><a href="baptismMarch.html" title="Event 3">March Water Baptism</a></li>
+                    </ul>
+                </li>
+                <li><a href="library.html" title="Online Resources">Online Resources</a></li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>
+                <li><a href="donate.html" title="Donate">Donate</a></li>	
+            </ul>
+        </nav>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header> <!-- end s-header -->
+
+
+    <!-- page header
+    ================================================== -->
+    <section class="page-header page-header--contact">
+
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+                <h1>Prayer Request</h1>
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+
+    <!-- page content
+    ================================================== -->
+    <section class="s-styles page-content">
+
+        <div class="row add-bottom">
+            
+            <div class="column large-full">
+
+                <h1 class="display-1">Submit Your Prayer Request</h1>              
+                    <p class="lead">
+                        Would you like us to pray for you? We'd love to 
+                        hear about the needs and concerns in your life, 
+                        and we'll be praying on your behalf. Please take 
+                        a moment to fill out the following form with your 
+                        request, and we'll do our best to lift you up in prayer.
+                    </p>
+                    <form name="prayerrequestForm" action="https://api.web3forms.com/submit" autocomplete="off" method="POST">
+                        <input type="hidden" name="access_key" value="6594362a-0993-402c-bc31-d673c059b3fb">
+                        
+                        <fieldset>
+
+                            <div class="form-field">
+                                <input name="cName" id="cName" class="h-full-width h-remove-bottom" placeholder="Your Name" value="" type="text">
+                            </div>
+
+                            <div class="form-field">
+                                <input name="cEmail" id="cEmail" class="h-full-width h-remove-bottom" placeholder="Your Email" value="" type="email" required>
+                                <input type="hidden" name="subject" value="Prayer Request">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                                <input type="hidden" name="redirect" value="https://pqu1nones.github.io/s4ctest/thankyou.html">                            
+                            </div>
+
+                            <div class="form-field">
+                                <input name="cWebsite" id="cWebsite" class="h-full-width h-remove-bottom" placeholder="Prayer Request" value="" type="text" required>
+                            </div>
+
+                            <div class="message form-field">
+                                <textarea name="cMessage" id="cMessage" class="h-full-width h-remove-bottom" placeholder="Tell us a brief description of what you're asking us to pray about (e.g. health, relationships, spiritual growth, etc.). Any specific circumstances or context surrounding your request" required></textarea>
+                            </div>
+
+                            <br>
+
+                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large h-full-width" value="Send Message" type="submit">
+
+                        </fieldset>
+                    </form>
+                    <p><a class="btn h-full-width" href="donate.html">Donate</a></p>
+                    <p class="column large-full">
+                        Alternatively, you can also email your prayer request to <a href="mailto:s4ctroops@aol.com, S4CprayingWithyou@aol.com">these emails</a>. 
+                        We'll do our best to respond and offer support.<br>
+                        <strong>Thank You for Asking Us to Pray</strong><br>
+                        We're honored that you would trust us with your prayers. Your requests are confidential and will be kept anonymous unless you choose to 
+                        share your identity. We look forward to praying for you!<br><br>
+                        “Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.” &ndash Philippians 4:6-7<br>
+                        <strong>NOTE:</strong> We value your privacy and would never spam you.
+            </div>
+        </div>
+
+    </section> <!-- end page-content -->
+
+
+    <!-- Social
+    ================================================== -->
+    <section class="s-social">
+            
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="https://www.facebook.com/p/Soldiers-For-Christ-Global-Community-Church-100067597751075/" title="S4C Facebook">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://x.com/s4ctroops" title="S4C X">
+                            <span class="social-list__icon social-list__icon--x"></span>
+                            <span class="social-list__text">X</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.youtube.com/@S4C2010" title="S4C YouTube">
+                            <span class="social-list__icon social-list__icon--youtube"></span>
+                            <span class="social-list__text">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="contact.html" title="Contat Us">
+                            <span class="social-list__icon social-list__icon--email"></span>
+                            <span class="social-list__text">Email</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.youtube.com/@CROWNEDatS4C" title="CROWNED YouTube">
+                            <span class="social-list__icon social-list__icon--youtube"></span>
+                            <span class="social-list__text">CROWNED</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end social-content -->
+
+    </section> <!-- end s-social -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <a href="index.html"><img width="120" height="120" class="h-pull-left" alt="sample-image" src="images/logo.png"></a>
+                <h4 class="h6">Our Mailing Address</h4>
+                <p>
+                    3350 East 7th Street Suite 409<br>
+                    Long Beach, California <br>
+                    90804 US
+                </p>
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>
+                        3048 East Anaheim Street <br>
+                        Long Beach, California <br>
+                        90804 US
+                        </p>
+        
+                        <p>
+                        <a href="https://maps.app.goo.gl/qRM7aivoMxuKXHJh6" target="_blank" class="btn btn--footer">Get Direction</a>
+                        <a href="index.html#times" class="btn btn--footer">Services Time</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ministries.html">Ministries</a></li>
+                            <li><a href="volunteer.html">Volunteer</a></li>
+                            <li><a href="connect-group.html">Connect Groups</a></li>
+                            <li><a href="events.html">Upcoming Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© 2025 Soldiers for Christ</span> 
+                <!--<span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span> -->
+            </div>
+        </div> <!-- footer-bottom -->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- ss-go-top -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
