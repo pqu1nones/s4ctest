@@ -1691,6 +1691,14 @@ input::-moz-focus-inner {
   width: 2.6rem;
 }
 
+.events-list__meta .events-list__meta-female-teacher::before {
+  background-image: url(../images/icons/female-teacher.svg)
+}
+
+.events-list__meta .events-list__meta-male-teacher::before {
+  background-image: url(../images/icons/male-teacher.svg)
+}
+
 /* ------------------------------------------------------------------- 
  * ## block list
  * ------------------------------------------------------------------- */
