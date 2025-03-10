@@ -2201,6 +2201,10 @@ input::-moz-focus-inner {
   position: relative;
 }
 
+.hero-content h5 {
+  color: #ffffff
+}
+
 .hero-content h1::before {
   display: block;
   content: "";
