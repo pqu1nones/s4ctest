@@ -3011,6 +3011,18 @@ html.no-csstransitions .hero-content {
 .series-content__subscribe-links .ss-snapchat a {
   background-image: url(../images/icons/podcast/snapchat-icon.svg);
 }
+.series-content__subscribe-links .ss-rumble a {
+  background-image: url(../images/icons/podcast/icon-rumble.png);
+}
+.series-content__subscribe-links .ss-vimeo a {
+  background-image: url(../images/icons/podcast/icon-vimeo.png);
+}
+.series-content__subscribe-links .ss-gab a {
+  background-image: url(../images/icons/podcast/icon-gab.svg);
+}
+.series-content__subscribe-links .ss-telegram a {
+  background-image: url(../images/icons/podcast/icon-telegram.svg);
+}
 
 /* ------------------------------------------------------------------- 
  * ## series subscribe CROWNED
