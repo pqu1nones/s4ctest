@@ -3608,7 +3608,9 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/header-bgs/events-header-bg.jpg);
 }
 
-
+.page-header--baptism {
+  background-image: url(../images/header-bgs/baptism-2000.jpg);
+}
 .page-header--connect {
   background-image: url(../images/header-bgs/connect-header-bg-2000.jpg);
 }
