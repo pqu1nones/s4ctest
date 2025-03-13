@@ -3594,6 +3594,10 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/header-bgs/about-header-bg-2000.jpg);
 }
 
+.page-header--legal {
+  background-image: url(../images/header-bgs/legal-bg-2000.jpg)
+}
+
 .page-header--contact {
   background-image: url(../images/header-bgs/contact-header-bg-2000.jpg);
 }
