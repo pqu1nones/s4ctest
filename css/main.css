@@ -1675,6 +1675,10 @@ input::-moz-focus-inner {
   background-image: url(../images/icons/icon-calendar.svg);
 }
 
+.events-list__meta .events-list__meta-topic::before{
+  background-image: url(../images/icons/bible.svg);
+}
+
 .events-list__meta .events-list__meta-time::before {
   background-image: url(../images/icons/icon-time.svg);
 }
