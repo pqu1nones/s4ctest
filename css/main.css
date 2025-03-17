@@ -3605,6 +3605,11 @@ html.no-csstransitions .hero-content {
 .page-header--contact {
   background-image: url(../images/header-bgs/contact-header-bg-2000.jpg);
 }
+
+.page-header--working {
+  background-image: url(../images/header-bgs/working-bg-2000.jpg);
+}
+
 .page-header--crowned {
   background-image: url(../images/crowned-2000.jpg);
 }
