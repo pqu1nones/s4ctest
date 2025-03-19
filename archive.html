@@ -17,7 +17,8 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/pagination-archive.css">
+    <link rel="stylesheet" href="css/sort.css">
+    <link rel="stylesheet" href="css/pgn-archive.css">
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     
 
@@ -147,81 +148,102 @@
                     
                             <!-- table content -->
                             <div class="table-responsive">
-                                <table id="myTable">
+                                <table id="Archive">
                                     <thead>
                                         <tr>
                                             <th>Title</th>
-                                            <th>Preacher</th>
-                                            <th>Date</th>
+                                            <th></th>
+                                            <th onclick="sortTable(2, this)">Preacher</th>
+                                            <th onclick="sortTable(3, this)">Date</th>
                                             <th>Link</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="row1">
                                             <td>Stop, Drop, and Pray</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>02/09/2025</td>
-                                            <td><a href="/notes/02092025-Pastor Ben.pdf" download>Click Here</a></td>                                            
+                                            <td><a href="/notes/02092025-Pastor Ben.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row2">
                                             <td>The End Game 2024</td>
-                                            <td>Pastor Pastor Sandy</td>
+                                            <td></td> 
+                                            <td>Pastor Sandy</td>
                                             <td>02/09/2025</td>
-                                            <td><a href="/notes/02092025-Pastor Sandy.pdf" download>Click Here</a></td>                                            
+                                            <td><a href="/notes/02092025-Pastor Sandy.pdf" download>Click Here</a></td>                                                                                       
                                         </tr>
                                         <tr class="row3">
                                             <td>Rob, How is This Possible</td>
+                                            <td></td>
                                             <td>Pastor Sandy</td>
                                             <td>02/12/2025</td>
-                                            <td><a href="/notes/02122025-Pastor Sandy.pdf" download>Click Here</a></td>   
+                                            <td><a href="/notes/02122025-Pastor Sandy.pdf" download>Click Here</a></td>                                            
                                         </tr>
                                         <tr class="row4">
                                             <td>Is Witchcraft Hiding Out In Your Life?</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>02/16/2025</td>
                                             <td><a href="/notes/02162025-Pastor Ben.pdf" download>Click Here</a></td>                                            
                                         </tr>
                                         <tr class="row5">
                                             <td>The Bible Deeper Than We Thought</td>
+                                            <td></td>
                                             <td>Pastor Sandy</td>
                                             <td>02/16/2025</td>
-                                            <td><a href="/notes/02162025-Pastor Sandy.pdf" download>Click Here</a></td>                                            
+                                            <td><a href="/notes/02162025-Pastor Sandy.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row6">
                                             <td>Flood Waters Ahead, The Rapture&apos;s Not A Conspiracy Theory</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>02/23/2025</td>
-                                            <td><a href="/notes/02232025-Pastor Ben.pdf" download>Click Here</a></td>                                            
+                                            <td><a href="/notes/02232025-Pastor Ben.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row7">
                                             <td>Two Adams in your Bible</td>
+                                            <td></td>
                                             <td>Pastor Sandy</td>
                                             <td>02/23/2025</td>
                                             <td><a href="/notes/02232025-Pastor Sandy.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row8">
                                             <td>Are You Ready To Be Picked?</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>03/02/2025</td>
                                             <td><a href="/notes/03022025-Pastor Ben.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row9">
                                             <td>WARNING! Don&apos;t Play With God</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>03/09/2025</td>
                                             <td><a href="/notes/03092025-Pastor Ben.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row10">
                                             <td>Road Map of Truth 17</td>
+                                            <td></td>
                                             <td>Pastor Sandy</td>
                                             <td>03/12/2025</td>
                                             <td><a href="/notes/03122025-Pastor Sandy.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <tr class="row11">
                                             <td>Me, Myself & I</td>
+                                            <td></td>
                                             <td>Pastor Ben</td>
                                             <td>03/16/2025</td>
                                             <td><a href="/notes/03162025-Pastor Ben.pdf" download>Click Here</a></td>
+                                            
                                         </tr>
                                         <!-- <tr class="row12">
                                             <td>The Hebrew Scriptures</td>
@@ -497,6 +519,8 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/pagination.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/pgn-archive.js"></script>
+   
 
 </body>
