@@ -3031,6 +3031,9 @@ html.no-csstransitions .hero-content {
 .series-content__subscribe-links .ss-telegram a {
   background-image: url(../images/icons/podcast/icon-telegram.svg);
 }
+.series-content__subscribe-links .ss-gab a {
+  background-image: url(../images/icons/podcast/gab-icon-512x512.png);
+}
 
 /* ------------------------------------------------------------------- 
  * ## series subscribe CROWNED
@@ -3260,16 +3263,43 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/icons/social/icon-facebook.svg);
 }
 
-.social-list__icon--twitter::before {
-  background-image: url(../images/icons/social/icon-twitter.svg);
-}
-
 .social-list__icon--youtube::before {
   background-image: url(../images/icons/social/icon-youtube.svg);
 }
 
 .social-list__icon--x::before {
   background-image: url(../images/icons/social/icon-x.svg);
+}
+
+.social-list__icon--twitter::before {
+  background-image: url(../images/icons/social/icon-twitter.svg);
+}
+
+.social-list__icon--instagram::before {
+  background-image: url(../images/icons/podcast/icon-instagram.svg);
+}
+
+.social-list__icon--tiktok::before {
+  background-image: url(../images/icons/social/tiktok.jpg);
+}
+.social-list__icon--gab::before {
+  background-image: url(../images/icons/podcast/gab-icon-512x512.png);
+}
+
+.social-list__icon--snapchat::before {
+  background-image: url(../images/icons/podcast/snapchat-icon.svg);
+}
+
+.social-list__icon--telegram::before {
+  background-image: url(../images/icons/podcast/icon-telegram.svg);
+}
+
+.social-list__icon--rumble::before {
+  background-image: url(../images/icons/podcast/icon-rumble.png);
+}
+
+.social-list__icon--vimeo::before {
+  background-image: url(../images/icons/podcast/icon-vimeo.png);
 }
 
 .social-list__icon--email::before {
