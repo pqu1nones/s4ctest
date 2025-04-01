@@ -1,87 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S4C Gallery</title>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>S4C Image Gallery</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css">
+    
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
-<body>
-    <div class="container">
-        <div class="gallery">
-            <a href="images/gallery/1.jpg" data-lightbox="S4C congregation" data-title="Caption 1">
-                <img src="images/gallery/1.jpg" alt="">
-            </a>
-            <a href="images/gallery/2.jpg" data-lightbox="S4C congregation" data-title="Caption 2">
-                <img src="images/gallery/2.jpg" alt="">
-            </a>
-            <a href="images/gallery/3.jpg" data-lightbox="S4C congregation" data-title="Caption 3">
-                <img src="images/gallery/3.jpg" alt="">
-            </a>
-            <a href="images/gallery/4.jpg" data-lightbox="S4C congregation" data-title="Caption 4">
-                <img src="images/gallery/4.jpg" alt="">
-            </a>
-            <a href="images/gallery/5.jpg" data-lightbox="S4C congregation" data-title="Caption 5">
-                <img src="images/gallery/5.jpg" alt="">
-            </a>
-            <a href="images/gallery/6.jpg" data-lightbox="S4C congregation" data-title="Caption 6">
-                <img src="images/gallery/6.jpg" alt="">
-            </a>
-            <a href="images/gallery/7.jpg" data-lightbox="S4C congregation" data-title="Caption 7">
-                <img src="images/gallery/7.jpg" alt="">
-            </a>
-            <a href="images/gallery/8.jpg" data-lightbox="S4C congregation" data-title="Caption 8">
-                <img src="images/gallery/8.jpg" alt="">
-            </a>
-            <a href="images/gallery/9.jpg" data-lightbox="S4C congregation" data-title="Caption 9">
-                <img src="images/gallery/9.jpg" alt="">
-            </a>
-            <a href="images/gallery/10.jpg" data-lightbox="S4C congregation" data-title="Caption 10">
-                <img src="images/gallery/10.jpg" alt="">
-            </a>
-            <a href="images/gallery/11.jpg" data-lightbox="S4C congregation" data-title="Caption 11">
-                <img src="images/gallery/11.jpg" alt="">
-            </a>
-            <a href="images/gallery/12.jpg" data-lightbox="S4C congregation" data-title="Caption 12">
-                <img src="images/gallery/12.jpg" alt="">
-            </a>
-            <a href="images/gallery/13.jpg" data-lightbox="S4C congregation" data-title="Caption 13">
-                <img src="images/gallery/13.jpg" alt="">
-            </a>
-            <a href="images/gallery/14.jpg" data-lightbox="S4C congregation" data-title="Caption 14">
-                <img src="images/gallery/14.jpg" alt="">
-            </a>
-            <a href="images/gallery/15.jpg" data-lightbox="S4C congregation" data-title="Caption 15">
-                <img src="images/gallery/15.jpg" alt="">
-            </a>
-            <a href="images/gallery/16.jpg" data-lightbox="S4C congregation" data-title="Caption 16">
-                <img src="images/gallery/16.jpg" alt="">
-            </a>
-            <a href="images/gallery/17.jpg" data-lightbox="S4C congregation" data-title="Caption 17">
-                <img src="images/gallery/17.jpg" alt="">
-            </a>
-            <a href="images/gallery/18.jpg" data-lightbox="S4C Congretation" data-title="Caption 18">
-                <img src="images/gallery/18.jpg" alt="">
-            </a>
-            <a href="images/gallery/19.jpg" data-lightbox="S4C Congretation" data-title="Caption 19">
-                <img src="images/gallery/19.jpg" alt="">
-            </a>
-            <a href="images/gallery/20.jpg" data-lightbox="S4C Congretation" data-title="Caption 20">
-                <img src="images/gallery/20.jpg" alt="">
-            </a>
-            <a href="images/gallery/21.jpg" data-lightbox="S4C Congretation" data-title="Caption 21">
-                <img src="images/gallery/21.jpg" alt="">
-            </a>
-            <a href="images/gallery/22.jpg" data-lightbox="S4C Congretation" data-title="Caption 22">
-                <img src="images/gallery/22.jpg" alt="">
-            </a>
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
-    <script src="js/lightbox-plus-jquery.js"></script>
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li class="current"><a href="about.html" title="About">About</a>
+                    <ul>
+                        <li><a href="rapture.html" title="Rapture">The Rapture</a></li>
+                        <li><a href="rmbc.html" title="RMBC">Rashon Messianic Bible College</a></li>
+                    </ul>
+                </li>
+                <li><a href="ministries.html" title="Ministies">Ministries</a>
+                    <ul>
+                        <li><a href="crowned.html" title="CROWNED">CROWNED</a></li>
+                        <li><a href="https://sanctifiedambassadors.com" target="_blank" title="S.A.L.T.">S.A.L.T.</a></li>
+                        <li><a href="ashes2art.html" title="Ashes2Art">Ashes2Art</a></li>
+                        <li><a href="heart2heart.html" title="Heart2Heart">Heart2Heart</a></li>
+                        <!-- <li><a href="#" title="Iglesia de Dios Camino de Santidad">Iglesia de Dios Camino de Santidad</a></li>
+                        <li><a href="https://www.waimanalocountryfarms.com/" target="_blank"" title="Waimanalo Crountry Farms">Waim&amacr;nalo Country Farms</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li><a href="volunteer.html" title="Volunteer">Volunteer</a></li> -->
+                <li><a href="events.html" title="Events">Events</a>
+                    <ul>
+                        <li><a href="prayermtg.html" title="Event 1">Prayer Meeting</a></li>
+                        <li><a allowfullscreen href="library/March2025.pdf" title="Calendar" target="_blank">Monthly Calendar</a></li>
+                        <li><a href="baptismMay.html" title="Water Baptism">Water Baptism</a></li>
+                        <li><a href="spotlight.html" title="Spotlight">Spotlight</a></li>
+                    </ul>
+                </li>
+                <li><a href="library.html" title="Online Resources">Online Resources</a>
+                    <ul>
+                        <li><a href="archive.html" title="Sermon Notes">Sermon Notes</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>
+                <li><a href="prayer-request.html" title="Prayer Request">Prayer Request</a></li>
+                <li><a href="donate.html" title="Donate">Donate</a></li>	
+            </ul>
+        </nav>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header> <!-- end s-header -->
+
+
+    <!-- page header
+    ================================================== -->
+    <section class="page-header page-header--about">
+
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+                <h1>S4C Image Gallery</h1>
+            </div>
+        </div>
+
+    </section> <!-- end page-header -->
+
+
+    <!-- page content
+    ================================================== -->
+    <section class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="away">away</li>
+            <li class="buttons" data-filter="baptisms">baptisms</li>
+            <li class="buttons" data-filter="celebrations">celebrations</li>
+            <li class="buttons" data-filter="services">services</li>
+            <li class="buttons" data-filter="youth">youth/kids</li>
+        </ul>
+    
+        <div class="image-container">
+            <!--Away Section-->
+            <a href="images/gallery/away1.jpg" class="image away">
+                <img src="images/gallery/away1.jpg" alt="">
+            </a>
+            <a href="images/gallery/away2.jpg" class="image away">
+                <img src="images/gallery/away2.jpg" alt="">
+            </a>
+            <a href="images/gallery/away3.jpg" class="image away">
+                <img src="images/gallery/away3.jpg" alt="">
+            </a>
+            <a href="images/gallery/away4.jpg" class="image away">
+                <img src="images/gallery/away4.jpg" alt="">
+            </a>
+            <a href="images/gallery/away5.jpg" class="image away">
+                <img src="images/gallery/away5.jpg" alt="">
+            </a>
+            <a href="images/gallery/away6.jpg" class="image away">
+                <img src="images/gallery/away6.jpg" alt="">
+            </a>
+            <a href="images/gallery/away7.JPG" class="image away">
+                <img src="images/gallery/away7.JPG" alt="">
+            </a>
+            <a href="images/gallery/away8.JPG" class="image away">
+                <img src="images/gallery/away8.JPG" alt="">
+            </a>
+            <a href="images/gallery/away9.JPG" class="image away">
+                <img src="images/gallery/away9.JPG" alt="">
+            </a>
+            <a href="images/gallery/away10.JPG" class="image away">
+                <img src="images/gallery/away10.JPG" alt="">
+            </a>
+            <a href="images/gallery/away11.jpeg" class="image away">
+                <img src="images/gallery/away11.jpeg" alt="">
+            </a>
+            <a href="images/gallery/away12.jpeg" class="image away">
+                <img src="images/gallery/away12.jpeg" alt="">
+            </a>
+            <a href="images/gallery/away13.jpg" class="image away">
+                <img src="images/gallery/away13.jpg" alt="">
+            </a>
+            <!--Baptisms-->
+            <a href="images/gallery/baptisms1.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms1.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms2.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms2.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms3.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms3.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms4.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms4.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms5.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms5.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms6.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms6.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms7.JPG" class="image baptisms">
+                <img src="images/gallery/baptisms7.JPG" alt="">
+            </a>
+            <a href="images/gallery/baptisms8.JPG" class="image baptisms">
+                <img src="images/gallery/baptisms8.JPG" alt="">
+            </a>
+            <a href="images/gallery/baptisms9.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms9.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms10.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms10.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms11.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms11.jpg" alt="">
+            </a>
+            <a href="images/gallery/baptisms12.JPG" class="image baptisms">
+                <img src="images/gallery/baptisms12.JPG" alt="">
+            </a>
+            <a href="images/gallery/baptisms13.jpg" class="image baptisms">
+                <img src="images/gallery/baptisms13.jpg" alt="">
+            </a>
+            <!--Celebrations-->
+            <a href="images/gallery/celebrations1.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations1.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations2.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations2.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations3.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations3.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations4.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations4.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations5.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations5.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations6.JPG" class="image celebrations">
+                <img src="images/gallery/celebrations6.JPG" alt="">
+            </a>
+            <a href="images/gallery/celebrations7.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations7.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations8.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations8.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations9.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations9.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations10.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations10.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations11.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations11.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations12.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations12.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations13.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations13.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations14.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations14.jpg" alt="">
+            </a>
+            <a href="images/gallery/celebrations15.jpg" class="image celebrations">
+                <img src="images/gallery/celebrations15.jpg" alt="">
+            </a>
+            <!--Services-->
+            <a href="images/gallery/services1.jpg" class="image services">
+                <img src="images/gallery/services1.jpg" alt="">
+            </a>
+            <a href="images/gallery/services2.jpg" class="image services">
+                <img src="images/gallery/services2.jpg" alt="">
+            </a>
+            <a href="images/gallery/services3.jpg" class="image services">
+                <img src="images/gallery/services3.jpg" alt="">
+            </a>
+            <a href="images/gallery/services4.jpg" class="image services">
+                <img src="images/gallery/services4.jpg" alt="">
+            </a>
+            <a href="images/gallery/services5.jpg" class="image services">
+                <img src="images/gallery/services5.jpg" alt="">
+            </a>
+            <a href="images/gallery/services6.JPG" class="image services">
+                <img src="images/gallery/services6.JPG" alt="">
+            </a>
+            <a href="images/gallery/services7.JPG" class="image services">
+                <img src="images/gallery/services7.JPG" alt="">
+            </a>
+            <a href="images/gallery/services8.jpg" class="image services">
+                <img src="images/gallery/services8.jpg" alt="">
+            </a>
+            <a href="images/gallery/services9.jpg" class="image services">
+                <img src="images/gallery/services9.jpg" alt="">
+            </a>
+            <a href="images/gallery/services10.jpg" class="image services">
+                <img src="images/gallery/services10.jpg" alt="">
+            </a>
+            <a href="images/gallery/services11.jpg" class="image services">
+                <img src="images/gallery/services11.jpg" alt="">
+            </a>
+            <a href="images/gallery/services12.jpg" class="image services">
+                <img src="images/gallery/services12.jpg" alt="">
+            </a>
+            <a href="images/gallery/services13.jpg" class="image services">
+                <img src="images/gallery/services13.jpg" alt="">
+            </a>
+            <!--Youth/Kids-->
+            <a href="images/gallery/youth1.jpg" class="image youth">
+                <img src="images/gallery/youth1.jpg" alt="">
+            </a>
+            <a href="images/gallery/youth2.jpg" class="image youth">
+                <img src="images/gallery/youth2.jpg" alt="">
+            </a>
+            <a href="images/gallery/youth3.jpg" class="image youth">
+                <img src="images/gallery/youth3.jpg" alt="">
+            </a>
+            <a href="images/gallery/youth4.JPG" class="image youth">
+                <img src="images/gallery/youth4.JPG" alt="">
+            </a>
+            <a href="images/gallery/youth5.jpg" class="image youth">
+                <img src="images/gallery/youth5.jpg" alt="">
+            </a>
+            <a href="images/gallery/youth6.jpg" class="image youth">
+                <img src="images/gallery/youth6.jpg" alt="">
+            </a>
+            <a href="images/gallery/youth7.jpg" class="image youth">
+                <img src="images/gallery/youth7.jpg" alt="">
+            </a>
+    
+        </div>
+        
+    </section> <!-- end page content -->
+
+    <!-- Social
+    ================================================== -->
+    <section class="s-social">
+            
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="https://www.facebook.com/p/Soldiers-For-Christ-Global-Community-Church-100067597751075/" title="S4C Facebook">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.youtube.com/@S4C2010" title="S4C YouTube">
+                            <span class="social-list__icon social-list__icon--youtube"></span>
+                            <span class="social-list__text">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://x.com/s4ctroops" title="S4C X">
+                            <span class="social-list__icon social-list__icon--x"></span>
+                            <span class="social-list__text">X</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.instagram.com/rmbc_hebrewclub/" title="S4C Instagram">
+                            <span class="social-list__icon social-list__icon--instagram"></span>
+                            <span class="social-list__text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://gab.com/s4ctroops" title="S4C Gab">
+                            <span class="social-list__icon social-list__icon--gab"></span>
+                            <span class="social-list__text">Gab</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://rumble.com/c/S4CGlobal" title="S4C Rumble">
+                            <span class="social-list__icon social-list__icon--rumble"></span>
+                            <span class="social-list__text">Rumble</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://t.me/soldeirs4christ" title="S4C Telegram">
+                            <span class="social-list__icon social-list__icon--telegram"></span>
+                            <span class="social-list__text">Telegram</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="https://www.youtube.com/@CROWNEDatS4C" title="CROWNED YouTube">
+                            <span class="social-list__icon social-list__icon--youtube"></span>
+                            <span class="social-list__text">CROWNED</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="contact.html" title="Contat Us">
+                            <span class="social-list__icon social-list__icon--email"></span>
+                            <span class="social-list__text">Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end social-content -->
+
+    </section> <!-- end s-social -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <a href="index.html"><img width="120" height="120" class="h-pull-left" alt="sample-image" src="images/logo.png"></a>
+                <h4 class="h6">Our Mailing Address</h4>
+                <p>
+                    3350 East 7th Street Suite 409<br>
+                    Long Beach, California <br>
+                    90804 US
+                </p>
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>
+                        3048 East Anaheim Street <br>
+                        Long Beach, California <br>
+                        90804 US
+                        </p>
+        
+                        <p>
+                        <a href="https://maps.app.goo.gl/qRM7aivoMxuKXHJh6" target="_blank" class="btn btn--footer">Get Direction</a>
+                        <a href="index.html#times" class="btn btn--footer">Services Time</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="ministries.html">Ministries</a></li>
+                            <li><a href="connect-group.html">Connect Groups</a></li>
+                            <li><a href="events.html">Upcoming Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© 2025 Soldiers for Christ</span> 
+                <span><a href="terms.html">Terms of Use and Legal Disclaimer</a></span>
+            </div>
+        </div> <!-- footer-bottom -->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- ss-go-top -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        $(document).ready(function(){
+        
+            $('.buttons').click(function(){
+        
+                $(this).addClass('active').siblings().removeClass('active');
+        
+                var filter = $(this).attr('data-filter')
+        
+                if(filter == 'all'){
+                    $('.image').show(400);
+                }else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
+                }
+        
+            });
+        
+            $('.gallery').magnificPopup({
+        
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+        
+            });
+        
+        });
+        
+        </script>
 
 </body>
 </html>
