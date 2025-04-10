@@ -128,9 +128,10 @@
     <section class="page-content">
         
         <div class="row">
-            <div class="column large-full">
-                <div class="alert-box alert-box--error hideit">
-                    <p>Please note that the following links are 
+            <div class="modal-overlay"></div><!-- end modal overlay -->
+                <div class="modalpopup">
+                    <p>
+                        Please note that the following links are 
                         provided as a service and for informational 
                         purposes only. Soldiers for Christ Global 
                         Community Church does not endorse, approve, 
@@ -142,9 +143,11 @@
                         subsequent links that may be accessed through 
                         those sites. If you have questions about the 
                         content of an external site, please contact 
-                        them directly.</p>
-                    <i class="fa-solid fa-xmark alert-box__close" aria-hidden="true"></i>
+                        them directly.
+                    </p>
+                    <a id="close" class="btn h-full-width" href="#0">Click Here to Close</a>
                 </div><!-- end info -->
+
                 <div class="page-content">
                     <div class="page-title">
                         <h2 class="display-1">Online Resources</h2>
@@ -559,5 +562,25 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/pgn-library.js"></script>
+    <script>
+        // Show the modal after a delay
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+            document.querySelector(".modalpopup").style.display = "block";
+            document.querySelector(".modal-overlay").style.display = "block";
+            },
+            1000); // 1-second delay
+        });
+        // Close the modal when the "Close" button is clicked
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".modalpopup").style.display = "none";
+            document.querySelector(".modal-overlay").style.display = "none";
+        });
+        // Close the modal when the overlay is clicked
+        document.querySelector(".modal-overlay").addEventListener("click", function () {
+            document.querySelector(".modalpopup").style.display = "none";
+            document.querySelector(".modal-overlay").style.display = "none";
+        });
+    </script>
 
 </body>
