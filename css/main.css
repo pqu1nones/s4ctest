@@ -2214,6 +2214,14 @@ input::-moz-focus-inner {
   background: #000000;
 }
 
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out; /* Smooth transition effect */
+}
+
+
 /* -------------------------------------------------------------------
  * ## hero left bar
  * ------------------------------------------------------------------- */
@@ -3995,7 +4003,8 @@ html.no-csstransitions .hero-content {
 .gallery .image-container .image img{
   height: 100%;
   width:100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top;
 }
 
 .gallery .image-container .image:hover img{
@@ -4055,7 +4064,21 @@ html.no-csstransitions .hero-content {
   .page-header h1 {
     font-size: 4.2rem;
   }
-
 }
 
+@media screen and (max-width: 600px) {
+  .s-hero {
+      object-fit: contain; /* Ensures the entire image is visible on smaller screens */
+      object-position: top;
+  }
+}
+/* Static image for mobile devices */
+@media screen and (max-width: 768px) {
+  #hero {
+      background-image: url('images/hero1-bg-3000.jpg'); /* Replace with your static image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}
 /*# sourceMappingURL=main.css.map */

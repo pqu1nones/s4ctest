@@ -111,11 +111,10 @@
 
     <!-- hero
     ================================================== -->
-    <section class="s-hero rellax" data-rellax-speed="-2" data-parallax="scroll" data-image-src="images/hero1-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
+    <!-- <section class="s-hero rellax" data-rellax-speed="-2" data-parallax="scroll" data-image-src="images/hero1-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center> -->
+    <section id="hero" class="s-hero rellax">
         <div class="hero-left-bar"></div>
-
-        <div class="row hero-content">
+            <div class="row hero-content">
 
             <div class="column large-full hero-content__text">
                 <h1>Soldiers for Christ (S4C)<br></h1>
@@ -457,6 +456,43 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Array of hero images
+        const heroImages = [
+            'images/image1.jpg',
+            'images/image2.jpg',
+            'images/image3.jpg',
+            'images/image4.jpg',
+            'images/image5.jpg',
+            'images/image6.jpg',
+            'images/image7.jpg',
+            'images/image8.jpg'
+        ];
+    
+        // Target the hero section
+        const heroSection = document.getElementById('hero');
+    
+        // Initialize the image index
+        let currentImageIndex = 0;
+    
+        // Function to change the hero image
+        function changeHeroImage() {
+            // Debugging: Log the current image path
+            console.log(`Changing to: ${heroImages[currentImageIndex]}`);
+    
+            // Update the background image
+            heroSection.style.backgroundImage = `url(${heroImages[currentImageIndex]})`;
+    
+            // Increment the index, reset if it exceeds the array length
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+        }
+    
+        // Start the image rotation every 3 seconds
+        setInterval(changeHeroImage, 3000);
+    
+        // Set the initial image
+        changeHeroImage();
+    </script>
     <script>
         // Initialize Rellax
         if (window.innerWidth > 768) {
