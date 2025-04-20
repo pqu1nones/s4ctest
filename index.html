@@ -421,7 +421,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-        // Array of hero images
+        // Array of hero images for larger screens
         const heroImages = [
             'images/image1.jpg',
             'images/image2.jpg',
@@ -432,30 +432,31 @@
             'images/image7.jpg',
             'images/image8.jpg'
         ];
-    
+
         // Target the hero section
         const heroSection = document.getElementById('hero');
-    
+
         // Initialize the image index
         let currentImageIndex = 0;
-    
+
         // Function to change the hero image
         function changeHeroImage() {
-            // Debugging: Log the current image path
-            console.log(`Changing to: ${heroImages[currentImageIndex]}`);
-    
             // Update the background image
             heroSection.style.backgroundImage = `url(${heroImages[currentImageIndex]})`;
-    
+
             // Increment the index, reset if it exceeds the array length
             currentImageIndex = (currentImageIndex + 1) % heroImages.length;
         }
-    
-        // Start the image rotation every 3 seconds
-        setInterval(changeHeroImage, 3000);
-    
-        // Set the initial image
-        changeHeroImage();
+
+        // Check if the screen width is greater than 768px
+        if (window.innerWidth > 768) {
+            // Start the image rotation for larger screens
+            setInterval(changeHeroImage, 3000);
+            changeHeroImage(); // Set the initial image
+        } else {
+            // Set a static image for mobile devices
+            heroSection.style.backgroundImage = 'url(images/hero.jpg)'; // Replace with your static image path
+        }
     </script>
     <script>
         // Initialize Rellax
@@ -472,7 +473,7 @@
         } else {
             // Fallback for mobile devices
             document.querySelectorAll('.rellax').forEach(function(element) {
-                element.style.backgroundImage = 'url(images/hero1-bg-3000.jpg)';
+                element.style.backgroundImage = 'url(images/hero.jpg)';
                 element.style.backgroundSize = 'cover';
                 element.style.backgroundPosition = 'center';
             });
